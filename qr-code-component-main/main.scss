@@ -1,0 +1,80 @@
+//google fonts
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+// base primary
+$white: hsl(0, 0%, 100%);
+$slate-300: hsl(212, 45%, 89%);
+$slate-500: hsl(216, 15%, 48%);
+$slate-900: hsl(218, 44%, 22%);
+$mobile: 375px;
+$desktop: 1440px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: $slate-300;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 22px;
+  color: $slate-900;
+  line-height: 1.2;
+}
+p {
+  color: $slate-500;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: $desktop;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  @media (max-width: $mobile) {
+    padding-left: 27.5px;
+    padding-right: 27.5px;
+  }
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 320px;
+  padding: 1rem;
+  border-radius: 20px;
+  background: $white;
+  img {
+    border-radius: 10px;
+  }
+}
+.text {
+  margin: 1.5rem 0;
+  padding: 0 1rem;
+  text-align: center;
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
