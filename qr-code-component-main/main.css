@@ -55,6 +55,7 @@ img {
   padding: 1rem;
   border-radius: 20px;
   background: hsl(0, 0%, 100%);
+  box-shadow: 0 20px 20px #cecece;
 }
 .card img {
   border-radius: 10px;
