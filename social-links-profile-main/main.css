@@ -28,6 +28,7 @@ ul {
 }
 
 .container {
+  margin: 0 auto;
   height: 100vh;
   position: relative;
   width: 100%;
