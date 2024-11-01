@@ -15,3 +15,11 @@ Practice with Frontend Mentor
 - [Design-Mobile](blog-preview-card-main\design\mobile-design.jpg)
 
 - [page](https://afonguwu.github.io/Frontend-Mentor-Practice/blog-preview-card-main/index.html)
+
+
+## Social Links Profile Component
+
+- [Design-PC](social-links-profile-main/design\desktop-design.jpg)
+- [Design-Mobile](social-links-profile-main/design\mobile-design.jpg)
+
+- [page](https://afonguwu.github.io/Frontend-Mentor-Practice/social-links-profile-main/index.html)
