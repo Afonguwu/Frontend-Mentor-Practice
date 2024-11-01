@@ -1,0 +1,107 @@
+//google fonts - Inter
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// variables
+  //color
+$green: hsl(75, 94%, 57%);
+$white: hsl(0, 0%, 100%);
+
+$grey-700: hsl(0, 0%, 20%);
+$grey-800: hsl(0, 0%, 12%);
+$grey-900: hsl(0, 0%, 8%);
+
+  //breakpoint
+  $mobile: 375px;
+  $desktop: 1440px;
+
+//base
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: $white;
+    background-color: $grey-900;
+}
+
+a{
+    text-decoration: none;
+    color: $white;
+    background-color: $grey-700;
+    &:hover,&:focus,&:active{
+        background-color: $green;
+        color:$grey-700
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+//customized
+.container{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    max-width: $desktop;
+    @media(max-width:$mobile){
+        padding:0 1rem ;
+    }
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    padding:  2rem;
+    background-color: $grey-800;
+    width: 360px;
+    text-align:center;
+    img{
+        border-radius: 50%;
+        width: 82px;
+        height: 82px;
+    }
+    a{
+        display: block;
+        padding: 1rem 0;
+        border-radius: 10px;
+    }
+}
+
+.attribution{
+    text-align: center;
+    a{
+        background: none;
+        color:$green;
+    }
+}
+
+//ulit
+.mb-24{
+    margin-bottom: 1.5rem;
+}
+.mb-16{
+    margin-bottom: 1rem;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.fz-12{
+    font-size: 12px;
+}
+.text-green{
+    color: $green;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-600{
+    font-weight: 600;
+}
