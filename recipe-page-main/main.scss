@@ -141,6 +141,10 @@ table {
 .attribution {
   font-size: 11px;
   text-align: center;
+  @media (max-width: $desktop) {
+    background-color: $white;
+    padding-top: 1.5rem;
+  }
 }
 .attribution a {
   color: $rose-800;

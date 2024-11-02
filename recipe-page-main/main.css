@@ -130,6 +130,12 @@ table tr:last-child td {
   font-size: 11px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .attribution {
+    background-color: hsl(0, 0%, 100%);
+    padding-top: 1.5rem;
+  }
+}
 
 .attribution a {
   color: hsl(332, 51%, 32%);
