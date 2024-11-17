@@ -29,3 +29,10 @@ Practice with Frontend Mentor
 - [Design-Mobile](recipe-page-main/design\mobile-design.jpg)
 
 - [page](https://afonguwu.github.io/Frontend-Mentor-Practice/recipe-page-main/index.html)
+
+## Product Preview Card Component
+
+- [Design-PC](product-preview-card-component-main/design\desktop-design.jpg)
+- [Design-Mobile](product-preview-card-component-main/design\mobile-design.jpg)
+
+- [page](https://afonguwu.github.io/Frontend-Mentor-Practice/product-preview-card-component-main/index.html)

@@ -1,0 +1,138 @@
+//mobile-first
+//google-font:Montserrat & Fraunces
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+//variables
+//colors
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$dark-blue: hsl(212, 21%, 14%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+//breakpoints
+$mobile: 375px;
+$pad: 768px;
+$desktop: 1440px;
+//font-size
+$base-font-size: 0.875rem;
+//border
+$border-radius: 10px;
+//reset
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+//base
+body {
+	background-color: $cream;
+	font-size: clamp($base-font-size, $base-font-size + 0.5vw, 1rem);
+	font-family: "Montserrat", serif;
+	font-weight: 500;
+	line-height: 1;
+}
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+p {
+	color: $dark-grayish-blue;
+	line-height: 1.5;
+}
+main {
+	padding: 2rem 1.5rem;
+	width: 100%;
+	margin: 0 auto;
+	max-width: $desktop;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+//custom
+h1,
+h2 {
+	font-size: clamp($base-font-size * 2, $base-font-size * 2 + 0.5vw, 2rem);
+	font-family: "Fraunces", serif;
+	font-weight: 700;
+}
+h1 {
+	color: $dark-blue;
+}
+h2 {
+	display: flex;
+	align-items: center;
+}
+.card {
+	width: $mobile;
+	background-color: $white;
+	border-radius: $border-radius;
+	margin: auto;
+	@media (min-width: $pad) {
+		width: 580px;
+	}
+	@media (min-width: $desktop) {
+		display: flex;
+	}
+}
+picture {
+	@media (min-width: $desktop) {
+		width: 50%;
+	}
+	img {
+		border-radius: $border-radius $border-radius 0 0;
+		width: 100%;
+		@media (min-width: $desktop) {
+			border-radius: $border-radius 0 0 $border-radius;
+		}
+	}
+}
+
+.text-block {
+	padding: 1.5rem;
+	@media (min-width: $desktop) {
+		width: 50%;
+	}
+}
+.badge {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: $base-font-size;
+}
+.original-price {
+	text-decoration: line-through;
+	font-size: $base-font-size;
+	color: $dark-grayish-blue;
+	margin-inline-start: 1rem;
+	font-family: "Montserrat", serif;
+	font-weight: 500;
+}
+
+.btn {
+	background-color: $dark-cyan;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	text-align: center;
+	border-radius: $border-radius;
+	color: $white;
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: hsl(159, 36%, 17%);
+	}
+	img {
+		margin-inline-end: 0.5rem;
+	}
+}
+//util
+.color-green {
+	color: hsl(158, 36%, 37%);
+}
+.mb-1 {
+	margin-bottom: 1rem;
+}

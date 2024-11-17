@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: clamp(0.875rem, 0.875rem + 0.5vw, 1rem);
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  line-height: 1;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+
+main {
+  padding: 2rem 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+h1,
+h2 {
+  font-size: clamp(1.75rem, 1.75rem + 0.5vw, 2rem);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 375px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .card {
+    width: 580px;
+  }
+}
+@media (min-width: 1440px) {
+  .card {
+    display: flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  picture {
+    width: 50%;
+  }
+}
+picture img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+@media (min-width: 1440px) {
+  picture img {
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+.text-block {
+  padding: 1.5rem;
+}
+@media (min-width: 1440px) {
+  .text-block {
+    width: 50%;
+  }
+}
+
+.badge {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.875rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  margin-inline-start: 1rem;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+}
+.btn:hover, .btn:focus, .btn:active {
+  background-color: hsl(159, 36%, 17%);
+}
+.btn img {
+  margin-inline-end: 0.5rem;
+}
+
+.color-green {
+  color: hsl(158, 36%, 37%);
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=main.css.map */
