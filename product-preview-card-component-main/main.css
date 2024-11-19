@@ -82,7 +82,7 @@ picture img {
 }
 
 .text-block {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 @media (min-width: 1440px) {
   .text-block {
