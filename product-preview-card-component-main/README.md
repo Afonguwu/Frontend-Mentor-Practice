@@ -7,14 +7,10 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -34,11 +30,6 @@ Users should be able to:
 ![mobile](images/product-preview-card-mobile.png)
 
 ![desktop](images/product-preview-card-desktop.png)
-
-### Links
-
-- Solution URL: [solution URL](https://github.com/Afonguwu/Frontend-Mentor-Practice/tree/master/product-preview-card-component-main)
-- Live Site URL: [live site URL](https://afonguwu.github.io/Frontend-Mentor-Practice/product-preview-card-component-main/index.html)
 
 ## My process
 
