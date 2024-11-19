@@ -13,6 +13,10 @@ body {
   font-family: "Montserrat", serif;
   font-weight: 500;
   line-height: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
@@ -27,13 +31,10 @@ p {
 }
 
 main {
-  padding: 2rem 1.5rem;
+  padding: 1.5rem;
   width: 100%;
   margin: 0 auto;
   max-width: 1440px;
-  display: flex;
-  align-items: center;
-  height: 100vh;
 }
 
 h1,
@@ -53,18 +54,14 @@ h2 {
 }
 
 .card {
-  width: 375px;
+  width: 320px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
   margin: auto;
 }
-@media (min-width: 768px) {
-  .card {
-    width: 580px;
-  }
-}
 @media (min-width: 1440px) {
   .card {
+    width: 580px;
     display: flex;
   }
 }

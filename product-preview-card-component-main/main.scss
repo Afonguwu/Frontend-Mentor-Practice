@@ -33,6 +33,10 @@ body {
 	font-family: "Montserrat", serif;
 	font-weight: 500;
 	line-height: 1;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 img {
 	display: block;
@@ -44,13 +48,10 @@ p {
 	line-height: 1.5;
 }
 main {
-	padding: 2rem 1.5rem;
+	padding: 1.5rem;
 	width: 100%;
 	margin: 0 auto;
 	max-width: $desktop;
-	display: flex;
-	align-items: center;
-	height: 100vh;
 }
 //custom
 h1,
@@ -67,14 +68,12 @@ h2 {
 	align-items: center;
 }
 .card {
-	width: $mobile;
+	width: 320px;
 	background-color: $white;
 	border-radius: $border-radius;
 	margin: auto;
-	@media (min-width: $pad) {
-		width: 580px;
-	}
 	@media (min-width: $desktop) {
+		width: 580px;
 		display: flex;
 	}
 }
