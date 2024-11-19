@@ -49,10 +49,10 @@ Users should be able to:
 
 ### What I learned
 
-- Be clearer with <picture> tag:
-  - <img> is necessary
-  - The size of <source> will depend on <img> setting
-  - <img> can't set `media` property,<source> can
+- Be clearer with`picture` tag:
+  - `img` tag is necessary
+  - The size of `source` tag will depend on `img` tag's setting
+  - `img` can't set `media` property,but `source` can
   - If all pictures are the same type, `type` property can ignored.
 
 ## Author
