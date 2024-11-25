@@ -11,7 +11,7 @@ $white: hsl(0, 0%, 100%);
 //breakpoints
 $mobile: 375px;
 $pad: 768px;
-$desktop: 1440px;
+$desktop: 992px;
 //font-size
 $base-font-size: 0.875rem;
 //border
@@ -33,10 +33,11 @@ body {
 	font-family: "Montserrat", serif;
 	font-weight: 500;
 	line-height: 1;
-	height: 100vh;
 	display: flex;
+	height: 100vh;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 img {
 	display: block;
@@ -48,10 +49,8 @@ p {
 	line-height: 1.5;
 }
 main {
-	padding: 1.5rem;
-	width: 100%;
+	padding: 1em;
 	margin: 0 auto;
-	max-width: $desktop;
 }
 //custom
 h1,
@@ -68,13 +67,18 @@ h2 {
 	align-items: center;
 }
 .card {
-	width: 320px;
 	background-color: $white;
 	border-radius: $border-radius;
 	margin: auto;
+	width: 100%;
+	@media (min-width: $pad) {
+		width: 50%;
+		max-width: $pad;
+	}
 	@media (min-width: $desktop) {
-		width: 580px;
 		display: flex;
+		width: 60%;
+		max-width: $desktop;
 	}
 }
 picture {
@@ -91,7 +95,7 @@ picture {
 }
 
 .text-block {
-	padding: 2rem;
+	padding: 2em;
 	@media (min-width: $desktop) {
 		width: 50%;
 	}
@@ -105,7 +109,7 @@ picture {
 	text-decoration: line-through;
 	font-size: $base-font-size;
 	color: $dark-grayish-blue;
-	margin-inline-start: 1rem;
+	margin-inline-start: 1em;
 	font-family: "Montserrat", serif;
 	font-weight: 500;
 }
@@ -119,13 +123,15 @@ picture {
 	text-align: center;
 	border-radius: $border-radius;
 	color: $white;
+	transition: 0.3s linear;
+	cursor: pointer;
 	&:hover,
 	&:focus,
 	&:active {
 		background-color: hsl(159, 36%, 17%);
 	}
 	img {
-		margin-inline-end: 0.5rem;
+		margin-inline-end: 0.5em;
 	}
 }
 //util
