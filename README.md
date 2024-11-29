@@ -43,3 +43,10 @@ Practice with Frontend Mentor
 - [Design-Mobile](four-card-feature-section-master/design\mobile-design.jpg)
 
 - [page](https://afonguwu.github.io/Frontend-Mentor-Practice/four-card-feature-section-master/index.html)
+
+## Testimonials Grid Section Component
+
+- [Design-PC](testimonials-grid-section-main/design\desktop-design.jpg)
+- [Design-Mobile](testimonials-grid-section-main/design\mobile-design.jpg)
+
+- [page](https://afonguwu.github.io/Frontend-Mentor-Practice/testimonials-grid-section-main/index.html)
