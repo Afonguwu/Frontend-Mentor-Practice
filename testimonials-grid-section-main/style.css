@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -119,6 +121,7 @@ h3 {
   border-radius: 10px;
   padding: 2.5em;
   margin-bottom: 2em;
+  box-shadow: 0 10px 10px rgba(72, 85, 106, 0.1);
 }
 @media (min-width: 768px) {
   .card {
@@ -130,13 +133,13 @@ h3 {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.9);
   margin-inline-end: 1.5em;
 }
 
 .bg-moderate-violet {
   background-color: hsl(263, 55%, 52%);
-  background-image: url(/images/bg-pattern-quotation.svg);
+  background-image: url(./images/bg-pattern-quotation.svg);
   background-position: top 0 right 2em;
   background-repeat: no-repeat;
   background-size: 7rem;
